@@ -3,7 +3,7 @@ sudo apt-get update
 sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
 
-sudo apt-get -y install aptitude
+sudo apt-get -y install aptitude curl
 sudo apt-get -y install build-essential git cmake 
 sudo apt-get -y install openjdk-8-jdk
 sudo apt-get -y install python-dev python-numpy python-pip
