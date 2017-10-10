@@ -18,6 +18,4 @@ sudo chmod +x lcm_install.bash
 sudo chmod +x useful_software_install.bash
 ./useful_software_install.bash
 
-sudo chmod +x vieo_card_install.bash
-sudo ./vieo_card_install.bash
 
