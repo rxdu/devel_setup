@@ -3,10 +3,11 @@
 # install basic tools
 sudo apt-get -y install terminator
 sudo apt-get -y install vim exuberant-ctags
-sudo apt-get -y install htop 
+sudo apt-get -y install htop
 sudo apt-get -y install openssh-server
 sudo apt-get -y install screen
 sudo apt-get -y install ntp
+sudo apt-get -y install valgrind 
 
 # research
 sudo apt-get -y install texlive-full
