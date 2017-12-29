@@ -1,6 +1,6 @@
 # Install scripts
 
-Tested OS: Ubuntu 16.04
+Tested OS: Ubuntu 16.04, Debian 8 (Jessie), Debian 9 (Stretch)
 
 Note:
 
