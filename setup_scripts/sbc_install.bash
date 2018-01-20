@@ -17,3 +17,4 @@ sudo apt-get -y install openssh-server
 sudo apt-get -y install screen
 sudo apt-get -y install ntp
 sudo apt-get -y install valgrind 
+sudo apt-get -y install can-utils
