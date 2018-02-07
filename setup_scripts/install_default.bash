@@ -9,13 +9,13 @@ if [ $(whoami) == 'root' ];then
 fi
 
 cd ~/Downloads
-sudo chmod +x dependancy_install.bash
+sudo chmod +x base_install.bash
 ./dependancy_install.bash
 
 sudo chmod +x lcm_install.bash
 ./lcm_install.bash
 
-sudo chmod +x useful_software_install.bash
+sudo chmod +x devel_install.bash
 ./useful_software_install.bash
 
 
