@@ -20,5 +20,9 @@ sudo apt-get -y install mathgl libmgl-dev libmgl-glut7.4.1
 # replace the default config file
 sudo cp source/config.h /usr/include/mgl2/
 
+sudo apt-get -y install libcairo2 libcairo2-dev
+sudo apt-get -y install libfltk1.3 libfltk1.3-dev
+sudo apt-get -y install libfltk-cairo1.3
+
 sudo apt-get -y install libqglviewer-dev
 sudo apt-get -y install qt5-default
