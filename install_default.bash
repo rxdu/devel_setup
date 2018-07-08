@@ -1,6 +1,6 @@
 #!/bin/bash
 
-onlyroot="Do not run this as root."
+onlyroot="Do not run this script as root."
   
 if [ $(whoami) == 'root' ];then
     echo -e  $COLOR$onlyroot$MONO       #"Only root can do this operation."
@@ -8,14 +8,16 @@ if [ $(whoami) == 'root' ];then
     exit 0
 fi
 
-cd ~/Downloads
-sudo chmod +x base_install.bash
+cd ./scripts
+
+sudo chmod +x ./base_install.bash
 ./dependancy_install.bash
 
-sudo chmod +x lcm_install.bash
+sudo chmod +x ./lcm_install.bash
 ./lcm_install.bash
 
-sudo chmod +x devel_install.bash
-./useful_software_install.bash
+sudo chmod +x ./devel_install.bash
+./devel_install.bash
+
 
 
