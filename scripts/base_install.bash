@@ -25,12 +25,13 @@ sudo apt-get -y install python-numpy  python-scipy python-matplotlib
 # commonly used libraries
 sudo apt-get -y install libopencv-dev python-opencv
 sudo apt-get -y install libboost-all-dev libeigen3-dev 
-sudo apt-get -y install doxygen
+sudo apt-get -y install libcgal-dev
+sudo apt-get -y install libgsl2 libgsl-dev
 
 sudo apt-get -y install libqglviewer-dev
 sudo apt-get -y install qt5-default
 
-sudo apt-get -y install libgsl2 libgsl-dev
+sudo apt-get -y install doxygen
 
 # install VS Code
 sudo apt-get -y install apt-transport-https
