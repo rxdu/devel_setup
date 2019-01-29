@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# update system
-sudo apt-get update
-sudo apt-get -y upgrade
-sudo apt-get -y dist-upgrade
-
 # install basic tools
 sudo apt-get -y install aptitude curl
 sudo apt-get -y install terminator
@@ -17,26 +12,6 @@ sudo apt-get -y install can-utils
 sudo apt-get -y install valgrind 
 sudo apt-get -y install gnome-nettool
 sudo apt-get -y install doxygen
-
-# development tools for C++, java, python
-sudo apt-get -y install build-essential git cmake 
-sudo apt-get -y install openjdk-8-jdk
-sudo apt-get -y install python-dev python-pip 
-sudo apt-get -y install python-numpy python-scipy python-matplotlib
-
-# commonly used libraries
-sudo apt-get -y install libopencv-dev python-opencv
-sudo apt-get -y install libboost-all-dev libeigen3-dev 
-sudo apt-get -y install libcgal-dev
-sudo apt-get -y install libgsl2 libgsl-dev
-
-sudo apt-get -y install qt5-default
-sudo apt-get -y install libqglviewer-dev-qt5
-
-# install Cairo and FLTK
-sudo apt-get -y install libcairo2 libcairo2-dev
-sudo apt-get -y install libfltk1.3 libfltk1.3-dev
-sudo apt-get -y install libfltk-cairo1.3
 
 # install VS Code
 sudo apt-get -y install apt-transport-https

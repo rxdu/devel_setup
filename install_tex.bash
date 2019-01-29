@@ -13,18 +13,9 @@ sudo apt-get update
 sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
 
-# run installation scripts
-cd ./scripts
+# research
+sudo apt-get -y install texlive-full
+sudo apt-get -y install texstudio
 
-sudo chmod +x ./tool_install.bash
-./tool_install.bash
-
-sudo chmod +x ./devel_install.bash
-./devel_install.bash
-
-sudo chmod +x ./devel2_install.bash
-./devel2_install.bash
-
-sudo chmod +x ./lcm_install.bash
-./lcm_install.bash
-
+sudo apt-get install -y libwebkitgtk-1.0-0
+sudo apt-get install -y libproxy1-plugin-webkit
