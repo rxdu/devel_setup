@@ -3,6 +3,7 @@
 Target OS: Ubuntu 16.04, Ubuntu 18.04, Debian 8 (Jessie), Debian 9 (Stretch)
 
 * install_default.bash: recommended for PC
+* install_devel.bash: install dependent libraries for deveopment
 * install_sbc.bash: minimal installation for single-board computers
 * install_tex.bash: install latex related packages
 * install_full.bash: full installation
