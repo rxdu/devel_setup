@@ -32,3 +32,10 @@ mkdir Fast-RTPS/build && cd Fast-RTPS/build
 cmake -DCOMPILE_EXAMPLES=ON ..
 make -j8
 sudo make install
+
+# Fast-RTPS-Gen
+cd ~/Software/fastrtps
+git clone --recursive https://github.com/eProsima/Fast-RTPS-Gen.git
+cd Fast-RTPS-Gen
+gradle assemble
+echo 'export PATH=$PATH:~/Software/fastrtps/Fast-RTPS-Gen/scripts' >> ~/.bashrc 
