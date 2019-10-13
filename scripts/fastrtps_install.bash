@@ -2,18 +2,33 @@
 
 # install dependency
 sudo apt install -y gradle
+sudo apt install -y libasio-dev libtinyxml2-dev
+sudo apt install -y libssl-dev
 
 # create folder 
 mkdir -p ~/Software/fastrtps
+
+# Fast-CDR
 cd ~/Software/fastrtps
+git clone https://github.com/eProsima/Fast-CDR.git
+mkdir Fast-CDR/build && cd Fast-CDR/build
+cmake ..
+make -j8
+sudo make install
+
+# Foonathan memory
+cd ~/Software/fastrtps
+git clone https://github.com/eProsima/foonathan_memory_vendor.git
+cd foonathan_memory_vendor
+mkdir build && cd build
+cmake ..
+make -j8
+sudo make install
 
 # clone LCM source, compile and install
-git clone https://github.com/eProsima/Fast-RTPS
-cd Fast-RTPS
-
-mkdir build
-cd build
-
-cmake -DTHIRDPARTY=ON -DBUILD_JAVA=ON ..
+cd ~/Software/fastrtps
+git clone https://github.com/eProsima/Fast-RTPS.git
+mkdir Fast-RTPS/build && cd Fast-RTPS/build
+cmake -DCOMPILE_EXAMPLES=ON ..
 make -j8
 sudo make install
