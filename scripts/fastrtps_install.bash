@@ -25,7 +25,7 @@ cmake ..
 make -j8
 sudo make install
 
-# clone LCM source, compile and install
+# FastRTPS
 cd ~/Software/fastrtps
 git clone https://github.com/eProsima/Fast-RTPS.git
 mkdir Fast-RTPS/build && cd Fast-RTPS/build
