@@ -4,5 +4,6 @@
         "/home/rdu/Workspace/weston_robot/code/weston/wsensor_hub/src/lcmtypes/python",
         "/home/rdu/Workspace/weston_robot/code/weston/wsensor_hub/python",
         "/opt/ros/eloquent/lib/python3.6/site-packages"
-    ]
+    ],
+    "ros.distro": "melodic"
 }
