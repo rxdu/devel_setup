@@ -1,0 +1,8 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/rdu/Workspace/ros2_ws/install/turtlesim/lib/python3.6/site-packages",
+        "/home/rdu/Workspace/weston_robot/code/weston/wsensor_hub/src/lcmtypes/python",
+        "/home/rdu/Workspace/weston_robot/code/weston/wsensor_hub/python",
+        "/opt/ros/eloquent/lib/python3.6/site-packages"
+    ]
+}
