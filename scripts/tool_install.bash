@@ -12,6 +12,7 @@ sudo apt-get -y install can-utils
 sudo apt-get -y install valgrind 
 sudo apt-get -y install gnome-nettool
 sudo apt-get -y install doxygen python3-sphinx
+sudo apt-get -y install bless
 
 # install VS Code
 sudo apt-get -y install apt-transport-https
