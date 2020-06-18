@@ -19,6 +19,9 @@ cd ./scripts
 sudo chmod +x ./tool_install.bash
 ./tool_install.bash
 
+sudo chmod +x ./gui_tool_install.bash
+./tool_install.bash
+
 sudo chmod +x ./devel_install.bash
 ./devel_install.bash
 
