@@ -2,7 +2,7 @@
 
 # install basic tools
 sudo apt-get -y install aptitude curl
-sudo apt-get -y install terminator
+sudo apt-get -y install terminator tmux
 sudo apt-get -y install vim exuberant-ctags
 sudo apt-get -y install htop
 sudo apt-get -y install openssh-server
