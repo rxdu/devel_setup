@@ -22,9 +22,9 @@ sudo chmod +x ./tool_install.bash
 sudo chmod +x ./devel_install.bash
 ./devel_install.bash
 
-sudo chmod +x ./devel2_install.bash
-./devel2_install.bash
+#sudo chmod +x ./devel2_install.bash
+#./devel2_install.bash
 
-sudo chmod +x ./lcm_install.bash
-./lcm_install.bash
+#sudo chmod +x ./lcm_install.bash
+#./lcm_install.bash
 
