@@ -28,11 +28,11 @@ sudo chmod +x ./devel_install.bash
 sudo chmod +x ./devel2_install.bash
 ./devel2_install.bash
 
-sudo chmod +x ./lcm_install.bash
-./lcm_install.bash
+# sudo chmod +x ./lcm_install.bash
+# ./lcm_install.bash
 
-sudo chmod +x ./fastrtps_install.bash
-./fastrtps_install.bash
+sudo chmod +x ./fastdds_install.bash
+./fastdds_install.bash
 
 # install latex
 sudo apt-get -y install texlive-full

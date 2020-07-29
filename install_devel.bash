@@ -31,6 +31,6 @@ sudo apt-get -y install doxygen
 sudo chmod +x ./devel_install.bash
 ./devel_install.bash
 
-sudo chmod +x ./lcm_install.bash
-./lcm_install.bash
+# sudo chmod +x ./lcm_install.bash
+# ./lcm_install.bash
 
