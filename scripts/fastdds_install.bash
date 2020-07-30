@@ -42,7 +42,7 @@ sudo make install
 # Fast-RTPS-Gen
 cd ~/Software/fastdds
 git clone --recursive https://github.com/eProsima/Fast-DDS-Gen.git
-cd Fast-RTPS-Gen
+cd Fast-DDS-Gen
 git checkout fastgen_version
 ./gradlew assemble
 echo 'export PATH=$PATH:~/Software/fastdds/Fast-RTPS-Gen/scripts' >> ~/.bashrc 
