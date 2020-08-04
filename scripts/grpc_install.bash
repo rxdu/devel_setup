@@ -2,14 +2,16 @@
 
 grpc_version=v1.30.2
 
-sudo apt-get update && apt-get install -y libssl-dev
+sudo apt-get update && sudo apt-get install -y libssl-dev
 
 # create folder 
 mkdir -p ~/Software
+cd ~/Software
 
 # build and install grpc
 git clone https://github.com/grpc/grpc.git
 cd ~/Software/grpc
+git submodule update --init --recursive
 mkdir build && cd build
 cmake \
   -DCMAKE_BUILD_TYPE=Release \
