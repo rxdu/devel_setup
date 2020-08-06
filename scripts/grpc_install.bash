@@ -9,9 +9,8 @@ mkdir -p ~/Software
 cd ~/Software
 
 # build and install grpc
-git clone https://github.com/grpc/grpc.git
+git clone --recursive https://github.com/grpc/grpc.git
 cd ~/Software/grpc
-git submodule update --init --recursive
 mkdir build && cd build
 cmake \
   -DCMAKE_BUILD_TYPE=Release \
