@@ -8,7 +8,6 @@ fastgen_version=v1.0.4
 cd ~/Software/fastdds/Fast-CDR
 git pull origin
 git checkout $fastcdr_version
-git checkout -b weston-$fastcdr_version
 cd build
 cmake ..
 make -j8
@@ -18,7 +17,6 @@ sudo make install
 cd ~/Software/fastdds/Fast-DDS
 git pull origin
 git checkout $fastdds_version
-git checkout -b weston-$fastdds_version
 cd build
 cmake -DCOMPILE_EXAMPLES=ON ..
 make -j8
@@ -28,5 +26,4 @@ sudo make install
 cd ~/Software/fastdds/Fast-DDS-Gen
 git pull origin
 git checkout $fastgen_version
-git checkout -b weston-$fastgen_version
 ./gradlew assemble
