@@ -15,7 +15,7 @@ mkdir -p ~/Software/fastdds
 # Fast-CDR
 cd ~/Software/fastdds
 git clone https://github.com/eProsima/Fast-CDR.git
-mkdir Fast-CDR/build && cd Fast-CDR/build
+mkdir -p Fast-CDR/build && cd Fast-CDR/build
 git checkout fastcdr_version
 cmake ..
 make -j8
@@ -24,8 +24,7 @@ sudo make install
 # Foonathan memory
 cd ~/Software/fastdds
 git clone https://github.com/eProsima/foonathan_memory_vendor.git
-cd foonathan_memory_vendor
-mkdir build && cd build
+mkdir -p foonathan_memory_vendor/build && cd foonathan_memory_vendor/build
 cmake .. -DBUILD_SHARED_LIBS=ON
 make -j8
 sudo make install
@@ -33,7 +32,7 @@ sudo make install
 # FastDDS
 cd ~/Software/fastdds
 git clone https://github.com/eProsima/Fast-DDS.git
-mkdir Fast-DDS/build && cd Fast-DDS/build
+mkdir -p Fast-DDS/build && cd Fast-DDS/build
 git checkout fastdds_version
 cmake -DCOMPILE_EXAMPLES=ON ..
 make -j8
