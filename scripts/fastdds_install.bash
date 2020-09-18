@@ -16,7 +16,7 @@ mkdir -p ~/Software/fastdds
 cd ~/Software/fastdds
 git clone https://github.com/eProsima/Fast-CDR.git
 mkdir -p Fast-CDR/build && cd Fast-CDR/build
-git checkout fastcdr_version
+git checkout $fastcdr_version
 cmake ..
 make -j8
 sudo make install
@@ -33,7 +33,7 @@ sudo make install
 cd ~/Software/fastdds
 git clone https://github.com/eProsima/Fast-DDS.git
 mkdir -p Fast-DDS/build && cd Fast-DDS/build
-git checkout fastdds_version
+git checkout $fastdds_version
 cmake -DCOMPILE_EXAMPLES=ON ..
 make -j8
 sudo make install
@@ -42,6 +42,6 @@ sudo make install
 cd ~/Software/fastdds
 git clone --recursive https://github.com/eProsima/Fast-DDS-Gen.git
 cd Fast-DDS-Gen
-git checkout fastgen_version
+git checkout $fastgen_version
 ./gradlew assemble
 echo 'export PATH=$PATH:~/Software/fastdds/Fast-DDS-Gen/scripts' >> ~/.bashrc 
