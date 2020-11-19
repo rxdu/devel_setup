@@ -44,4 +44,4 @@ git clone --recursive https://github.com/eProsima/Fast-DDS-Gen.git
 cd Fast-DDS-Gen
 git checkout $fastgen_version
 ./gradlew assemble
-echo 'export PATH=$PATH:~/Software/fastdds/Fast-DDS-Gen/scripts' >> ~/.bashrc 
+echo -e '\nexport PATH=$PATH:~/Software/fastdds/Fast-DDS-Gen/scripts' >> ~/.bashrc 
