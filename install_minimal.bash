@@ -24,6 +24,6 @@ sudo apt-get -y install can-utils
 sudo apt-get -y install aptitude curl
 
 sudo apt-get -y install build-essential git cmake 
-sudo apt-get -y install python-dev python-pip 
 sudo apt-get -y install libboost-all-dev libeigen3-dev 
-sudo apt-get -y install libopencv-dev python-opencv
+# sudo apt-get -y install python-dev python-pip 
+# sudo apt-get -y install libopencv-dev python-opencv
