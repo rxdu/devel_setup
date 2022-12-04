@@ -1,0 +1,28 @@
+---
+# tasks file for common
+- name: Install common tools
+  become: true
+  apt:
+    state: present
+    name:
+      - aptitude
+      - terminator 
+      - htop
+      - tmux
+      - curl
+      - screen
+      - can-utils
+      - git
+      - nano
+      - locales
+
+- name: Ensure the locale exists
+  become: true
+  locale_gen:
+    name: en_US.UTF-8
+    state: present
+
+- name: Set en_US.UTF-8 as default locale
+  become: true
+  command: update-locale LANG=en_US.UTF-8
+

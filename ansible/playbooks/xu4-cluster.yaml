@@ -1,0 +1,16 @@
+---
+
+- hosts: xu4c
+  become: yes
+  vars:
+    docker_compose_arch: armv7
+    docker_apt_arch: armhf
+    pip_install_packages:
+      - name: docker
+  pre_tasks:
+  - name: Update apt cache if needed.
+    apt: update_cache=yes cache_valid_time=3600
+  roles:
+    - common
+    - geerlingguy.pip
+    - geerlingguy.docker

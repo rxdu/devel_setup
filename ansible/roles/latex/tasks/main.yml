@@ -1,0 +1,13 @@
+- name: Install tex compiler toolchain and libraries
+  become: true
+  ansible.builtin.apt:
+    state: present
+    name:
+      - texlive-full
+
+- name: Install tex editor
+  become: true
+  ansible.builtin.apt:
+    state: present
+    name:
+      - texstudio
